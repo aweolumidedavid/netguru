@@ -1,0 +1,18 @@
+name: movie test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test: # this is the mane of the job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Tests
+        run: |
+          cd ./netguru-recruitment-task
+          npm install
+          npm run test
