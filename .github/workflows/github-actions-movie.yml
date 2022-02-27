@@ -12,7 +12,8 @@ jobs:
 
     steps:
       - name: Run Tests
-        working-directory: ../../netguru-recruitment-task
+        # working-directory: ../../netguru-recruitment-task
         run: |
+          cd ../../netguru-recruitment-task
           npm install
           npm run test
