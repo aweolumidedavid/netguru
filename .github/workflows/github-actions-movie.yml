@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Run Tests
         run: |
-          cd ./netguru-recruitment-task
+          cd /netguru-recruitment-task
           npm install
           npm run test
